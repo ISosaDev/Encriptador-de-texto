@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Variables de color y fuente */
+:root{
+    --color-primario: #F3F5FC;
+    --color-secundario: #0A3871;
+    --color-terciario: #343A40;
+    --color-hover: #8bbbf7;
+    --color-footer: #7FFFD4;
+    --color-letraFooter: #011C75;
+
+    --fuente-inter: "Inter", sans-serif;
+}
+
+/* Estilo global para todos los elementos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body{
+    background-color: var(--color-primario);
+    width: 100%;
+    box-sizing: border-box;
+      
+}
+
+/* Estilo del encabezado */
+.header{
+    padding: 2%;
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+
+/* Estilo del contenedor principal */
+.contenido{
+    display: flex;
+    justify-content: left;
+    margin: 1%;
+    gap: 16px;
+}
+
+/* Estilo para el área de texto */
+.container_texto{
+    font-size: 2rem;
+    color: var(--color-secundario);
+    font-family: var(--fuente-inter);
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+} 
+
+/* Estilo para el textarea con id 'formulario' */
+#formulario{
+    font-size: 2rem;
+    color: var(--color-secundario);
+    font-family: var(--fuente-inter);
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+    background-color: var(--color-primario);
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+/* color del texto del  mensaje temporal en el textarea */
+textarea::placeholder{
+   color: var(--color-secundario); 
+}
+
+/* Estilo para la sección de botones */
+.seccion_botones{
+    display: flex;
+    align-items: center;
+    margin: 0%;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+/* Estilo del contenedor del texto desencriptado o encriptado */
+.container_texto_desencriptado{
+    background-color: #ffff;
+    width: 100%;
+    max-width: 450px;
+    height: 600px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    overflow: auto;
+    white-space: pre-wrap;
+    gap: 20px;
+}
+
+/* Estilo del textarea para el resultado de la desencriptación o encriptación */
+#resultado{
+    border: var(--color-primario);
+    font-size: 2rem;
+    color: var(--color-secundario);
+    font-family: var(--fuente-inter);
+    width: 80%;
+    max-width: 900px;
+    height: 600px;
+    background-color: white;
+    border: none;
+    outline: none;
+    resize: none;
+    
+}
+
+/* Estilo para el mensaje de texto no encontrado */
+#mensaje_no_encontrado{
+    font-family: var(--fuente-inter);
+    color: var(--color-terciario);
+    font-size: 1.5rem;
+}
+
+/* Estilo para el texto de ingresar */
+.ingresar_texto{
+    font-family: var(--fuente-inter);
+    color: var(--color-terciario);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.dibujo{
+    width: 70%;
+    max-width: 30px;
+    height: auto;
+    object-fit: contain;
+}
+
+#texto_no_encontrado{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 336px;
+    text-align: center;
+    gap: 10px;
+}
+
+
+/* Estilo para la clase contenedor de botones */
+.container_botones{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 680px;
+    /*min-width: 680px;*/
+    text-align: left;
+    gap: 16px;
+    
+}
+
+
+/* Estilo para el texto de advertencia */
+.advertencia{
+    font-family: var(--fuente-inter);
+    font-size: 0.75rem;
+    color: var(--color-terciario);
+    display: flex;
+    gap: 8px;
+    justify-content: left;
+}
+
+.icono{
+    width: 16px;
+    height: 16px;
+}
+
+/* Estilo para el boton con clase encriptar */
+.encriptar{
+    width: 100%;
+    max-width: 328px;
+    height: 67px;
+    background-color: var(--color-secundario);
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    color: var(--color-primario);
+    text-align: center;
+    border-radius: 24px;
+        
+}
+
+/* Cambia el color de fondo y el color del texto del botón con la clase "encriptar" 
+   cuando el usuario pasa el cursor sobre él */
+.encriptar:hover{
+    background-color: var(--color-hover);
+    color: var(--color-secundario);
+}
+
+
+/* Estilo para el boton con clase desencriptar */
+.desencriptar{
+    width: 100%;
+    max-width: 328px;
+    height: 67px;
+    background-color: var(--color-primario);
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    color: var(--color-secundario);
+    text-align: center;
+    border-radius: 24px;
+    border-color: var(--color-secundario);
+    border: solid;
+}
+
+/* Cambia el color de fondo y el color del texto del botón con la clase "desencriptar" 
+   cuando el usuario pasa el cursor sobre él */
+.desencriptar:hover{
+    background-color: var(--color-hover);
+    
+}
+
+/* Estilo para el botón con id copiar */
+#copiar{
+    width: 100%;
+    max-width: 100px;
+    height: 30px;
+    background-color: var(--color-secundario);
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    color: var(--color-primario);
+    text-align: center;
+    border-radius: 24px;
+    gap: 5px;
+}
+
+#copiar:hover{
+    background-color: var(--color-hover);
+    color: var(--color-secundario);
+}
+
+/* Estilo para el pie de página */
+.footer{
+    background-color: var(--color-footer);
+    padding: 24px;
+    color: var(--color-letraFooter);
+    text-align: center;
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    font-weight: 400;
+    width: 100%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1000px) {
+    .contenido {
+        flex-direction: column;
+        gap: 8px;
+        width: auto;
+    }
+
+    .seccion_botones{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        margin: 0%;
+    }
+
+    body{
+        
+        width: auto;
+        height: 100%;
+        box-sizing: border-box;
+       
+       
+    }
+
+    .container_botones{
+         
+        width: 500px;
+    }
+
+    .container_texto_desencriptado{
+        background-color: #ffff;
+        width: 100%;
+        max-width: 900px;
+        height: 600px;
+        border-radius: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        overflow: auto;
+        white-space: pre-wrap;
+    }
+
+}
+
+
+@media (max-width: 440px) {
+    .contenido {
+        flex-direction: column;
+        gap: 8px;
+        width: auto;
+        margin: 1%;
+        padding: 2%;
+    }
+
+    .seccion_botones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        margin: 0%;
+    }
+
+    
+
+    .container_botones{
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
