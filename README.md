@@ -4,6 +4,9 @@ El usuario ingresa un texto en minúsculas y sin caracteres especiales, y la apl
 
 Características:
 Encriptación: Transforma vocales y ciertos caracteres en secuencias específicas.
+
 Desencriptación: Invierte el proceso para recuperar el texto original.
+
 Validación de Input: Acepta solo letras minúsculas y espacios, rechazando cualquier otro carácter.
+
 Interfaz Interactiva: Muestra en tiempo real el texto encriptado o desencriptado en un área de resultados.
