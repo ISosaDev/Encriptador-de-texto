@@ -3,6 +3,7 @@ Este proyecto web encripta y desencripta mensajes de texto utilizando reglas esp
 El usuario ingresa un texto en minúsculas y sin caracteres especiales, y la aplicación transforma las vocales y ciertos caracteres según las reglas definidas. También incluye validación del input para asegurar que solo se ingresen caracteres válidos.
 
 Características:
+
 Encriptación: Transforma vocales y ciertos caracteres en secuencias específicas.
 
 Desencriptación: Invierte el proceso para recuperar el texto original.
